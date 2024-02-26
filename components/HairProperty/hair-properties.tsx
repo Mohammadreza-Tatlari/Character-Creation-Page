@@ -7,7 +7,8 @@ import PropertyContainer1 from "../PropertyContainer";
 
 function HairProperties() {
   return (
-    <PropertyContainer1>
+    <div className="transition">
+    <PropertyContainer1 >
       <RectangleContainer />
       <VolumeContainer>
         <SelectingVolume title="Hair contrast" />
@@ -15,6 +16,7 @@ function HairProperties() {
       </VolumeContainer>
       <ColorsTable title="HAIR COLOR" />
     </PropertyContainer1>
+    </div>
   );
 }
 

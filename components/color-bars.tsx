@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
+'use client';
 
-const SlopedBars: NextPage = () => {
+const SlopedBars = () => {
   return (
     <div className="h-[157px] w-[184.4px] absolute !m-[0] top-[-16px] left-[43px] z-[1]">
       <div className="absolute top-[0px] left-[34.87px] [background:linear-gradient(180deg,_rgba(0,_255,_25,_0.16),_rgba(28,_108,_0,_0))] w-[22px] h-[155px] [transform:_rotate(13deg)] [transform-origin:0_0]" />

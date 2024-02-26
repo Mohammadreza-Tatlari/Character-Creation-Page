@@ -1,3 +1,4 @@
+'use client'
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
@@ -6,7 +7,7 @@ import { SkinColorTable } from "../ColorsTable";
 
 function NoseProperties() {
   return (
-    <div className="pt-[230px]">
+    <div className="pt-[230px] transition">
     <PropertyContainer2>
       <VolumeContainer>
         <SelectingVolume title="NOSE STYLE" />

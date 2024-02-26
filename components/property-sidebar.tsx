@@ -1,19 +1,33 @@
-import type { NextPage } from "next";
+'use client'
 
-const PropertySidebar: NextPage = () => {
+import { useState } from "react";
+
+interface PropertySidebarProps{
+  OnChangeStep: (value:number) => void;
+  value: number;
+}
+
+const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
+
+
+  function handleClick(value:number) {
+    OnChangeStep(value)
+  }
   return (
     <div className="self-stretch flex flex-col items-start justify-start gap-[40px_0px] text-left text-mini text-white font-gilroy-bold">
       <div className="self-stretch flex flex-col items-start justify-start">
-        <button className="cursor-pointer [border:none] p-0 bg-lawngreen-100 self-stretch h-[50px] relative rounded-t-lg rounded-b-none">
-          <div className="absolute top-[0px] left-[0px] rounded-t-lg rounded-b-none bg-lawngreen-100 w-full h-full hidden" />
+        <div onClick={() => handleClick(0)}
+        className="cursor-pointer [border:none] p-0 self-stretch h-[50px] relative rounded-t-lg rounded-b-none group">
+          <div className={`${value == 0 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] rounded-t-lg rounded-b-none group-hover:bg-lawngreen-100 w-full h-full`} />
           <img
             className="absolute top-[14px] left-[13px] w-[23px] h-[23px] object-cover z-[1]"
             alt=""
             src="/user-2@2x.png"
           />
-        </button>
-        <div className="self-stretch h-[50px] relative bg-gray-300">
-          <div className="absolute top-[0px] left-[0px] bg-gray-300 w-full h-full hidden" />
+        </div>
+        <div onClick={() => handleClick(1)}
+        className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
+          <div className={`${value == 1 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -21,32 +35,39 @@ const PropertySidebar: NextPage = () => {
             src="/maleshortblackhairshape-1@2x.png"
           />
         </div>
-        <div className="self-stretch h-[50px] relative bg-gray-300">
-          <div className="absolute top-[0px] left-[0px] bg-gray-300 w-full h-full hidden" />
+        <div onClick={() => handleClick(2)} 
+        className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
+          <div className={`${value == 2 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
+            loading="eager"
             alt=""
             src="/manwithbeard-1@2x.png"
           />
         </div>
-        <div className="self-stretch h-[50px] relative bg-gray-300">
-          <div className="absolute top-[0px] left-[0px] bg-gray-300 w-full h-full hidden" />
+        <div onClick={() => handleClick(3)}
+        className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
+          <div className={`${value == 3 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] bg-gray-300 w-full h-full group-hover:bg-lawngreen-100 transition `} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
+            loading="eager"
             alt=""
             src="/eye-1@2x.png"
           />
         </div>
-        <div className="self-stretch h-[50px] relative bg-gray-300">
-          <div className="absolute top-[0px] left-[0px] bg-gray-300 w-full h-full hidden" />
+        <div onClick={() => handleClick(4)}
+        className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
+          <div className={`${value == 4 ? `bg-lawngreen-100` : `bg-gray-300`}  absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition `} />
           <img
             className="absolute top-[12px] left-[12px] w-[25px] h-[25px] object-cover z-[1]"
+            loading="eager"
             alt=""
             src="/eyebrow-1@2x.png"
           />
         </div>
-        <div className="self-stretch h-[50px] relative bg-gray-300">
-          <div className="absolute top-[0px] left-[0px] bg-gray-300 w-full h-full hidden" />
+        <div onClick={() => handleClick(5)}
+        className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
+          <div className={`${value == 5 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -54,16 +75,19 @@ const PropertySidebar: NextPage = () => {
             src="/ear-1@2x.png"
           />
         </div>
-        <button className="cursor-pointer [border:none] p-0 bg-gray-300 self-stretch h-[50px] relative">
-          <div className="absolute top-[0px] left-[0px] bg-gray-300 w-full h-full hidden" />
+        <button onClick={() => handleClick(6)}
+        className="cursor-pointer [border:none] p-0 bg-gray-300 self-stretch h-[50px] relative group">
+          <div className={`${value == 6 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
+            loading="eager"
             alt=""
             src="/lips-1@2x.png"
           />
         </button>
-        <div className="self-stretch h-[50px] relative rounded-t-none rounded-b-lg bg-gray-300">
-          <div className="absolute top-[0px] left-[0px] rounded-t-none rounded-b-lg bg-gray-300 w-full h-full hidden" />
+        <div onClick={() => handleClick(7)}
+        className="cursor-pointer self-stretch h-[50px] relative rounded-t-none rounded-b-lg bg-gray-300 group ">
+          <div className={`${value == 7 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] rounded-t-none rounded-b-lg w-full h-full group-hover:bg-lawngreen-100 transition`} />
           <img
             className="absolute top-[16px] left-[16px] w-[18px] h-[18px] object-cover z-[1]"
             loading="eager"

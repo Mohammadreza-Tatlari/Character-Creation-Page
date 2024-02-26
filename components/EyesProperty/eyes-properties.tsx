@@ -1,13 +1,13 @@
-import type { NextPage } from "next";
+'use client';
+
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import RectangleContainer from "../RectangleContainer";
 import ColorsTable from "../ColorsTable";
-import PropertyContainer1, { PropertyContainer2 } from "../PropertyContainer";
+import { PropertyContainer2 } from "../PropertyContainer";
 
 function EyesProperties() {
   return (
-    <div className="pt-[90px]">
+    <div className="pt-[90px] transition">
     <PropertyContainer2>
       <VolumeContainer>
         <SelectingVolume title="EYES STYLE" />

@@ -1,12 +1,13 @@
+'use client'
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
 import ColorsTable, { LipstickColorTable } from "../ColorsTable";
-import PropertyContainer1, { PropertyContainer2 } from "../PropertyContainer";
+import { PropertyContainer2 } from "../PropertyContainer";
 
 function LipsProperties() {
   return (
-    <div className="pt-[30px]">
+    <div className="pt-[30px] transition">
     <PropertyContainer2>
       <VolumeContainer>
         <SelectingVolume title="LIPS STYLE" />

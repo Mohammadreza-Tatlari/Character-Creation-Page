@@ -7,14 +7,16 @@ import PropertyContainer1 from "../PropertyContainer";
 
 function BeardProperties() {
   return (
-    <PropertyContainer1>
-      <RectangleContainer />
-      <VolumeContainer>
-        <SelectingVolume title="Beard contrast" />
-        <SelectingVolume title="Beard Reflection" />
-      </VolumeContainer>
-      <ColorsTable title="Beard COLOR" />
-    </PropertyContainer1>
+    <div className="transition">
+      <PropertyContainer1>
+        <RectangleContainer />
+        <VolumeContainer>
+          <SelectingVolume title="Beard contrast" />
+          <SelectingVolume title="Beard Reflection" />
+        </VolumeContainer>
+        <ColorsTable title="Beard COLOR" />
+      </PropertyContainer1>
+    </div>
   );
 }
 

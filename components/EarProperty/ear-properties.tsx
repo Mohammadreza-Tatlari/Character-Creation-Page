@@ -7,7 +7,7 @@ import { SkinColorTable } from "../ColorsTable";
 
 function EarProperties() {
   return (
-    <div className="pt-[180px]">
+    <div className="pt-[180px] transition">
     <PropertyContainer2>
       <VolumeContainer>
         <SelectingVolume title="EAR STYLE" />

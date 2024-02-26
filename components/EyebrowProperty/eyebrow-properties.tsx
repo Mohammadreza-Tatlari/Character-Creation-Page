@@ -6,7 +6,7 @@ import  { PropertyContainer2 } from "../PropertyContainer";
 
 function EyebrowProperties() {
   return (
-    <div className="pt-[90px]">
+    <div className="pt-[90px] transition">
     <PropertyContainer2>
       <VolumeContainer>
         <SelectingVolume title="EYEBROW STYLE" />

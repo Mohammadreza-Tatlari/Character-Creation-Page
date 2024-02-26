@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
+'use client';
 
-const PageTitle: NextPage = () => {
+const PageTitle = () => {
   return (
     <div className="w-[409px] flex flex-col items-start justify-start max-w-full text-left text-11xl text-white font-gilroy-black">
       <h1 className="m-0 w-[223px] relative text-inherit tracking-[0.15em] leading-[134%] uppercase font-normal font-inherit inline-block mq850:text-5xl mq850:leading-[32px] mq450:text-lg mq450:leading-[24px]">
