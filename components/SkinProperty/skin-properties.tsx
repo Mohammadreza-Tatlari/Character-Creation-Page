@@ -1,13 +1,14 @@
-import type { NextPage } from "next";
-import RectangleContainer from "../RectangleContainer";
+
+import { RectangleContainerDynamic } from "../RectangleContainer";
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
 import { SkinColorTable } from "../ColorsTable";
 import PropertyContainer1 from "../PropertyContainer";
 const SkinProperty = () => {
   return (
+    <div className="pt-[20px]">
     <PropertyContainer1>
-      <RectangleContainer />
+     <RectangleContainerDynamic />
       <VolumeContainer>
         <SelectingVolume title="Jaw" />
         <SelectingVolume title="Cheek" />
@@ -15,6 +16,7 @@ const SkinProperty = () => {
       </VolumeContainer>
       <SkinColorTable title="SKIN COLOR" />
     </PropertyContainer1>
+    </div>
   );
 };
 

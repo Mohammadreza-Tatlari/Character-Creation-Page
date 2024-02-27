@@ -8,9 +8,7 @@ export default function RectangleContainerZERO() {
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
-        <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
-        <div className="h-[70px] w-[70px] relative rounded-tl-none rounded-tr-lg rounded-b-none bg-gray-400 ml-[-2.2px]" />
-        <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
+        <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" /> {/*  rounded-tl-none rounded-tr-lg rounded-b-none */}
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
@@ -34,7 +32,9 @@ export default function RectangleContainerZERO() {
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
-        <div className="h-[70px] w-[70px] relative rounded-t-none rounded-br-none rounded-bl-lg bg-gray-400 ml-[-2.2px]" />
+        <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
+        <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
+        <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />{/*   rounded-t-none rounded-br-none rounded-bl-lg */}
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />
         <div className="h-[70px] w-[70px] relative bg-gray-400 ml-[-2.2px]" />

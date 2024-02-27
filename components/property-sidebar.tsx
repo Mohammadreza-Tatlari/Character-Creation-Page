@@ -18,7 +18,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
       <div className="self-stretch flex flex-col items-start justify-start">
         <div onClick={() => handleClick(0)}
         className="cursor-pointer [border:none] p-0 self-stretch h-[50px] relative rounded-t-lg rounded-b-none group">
-          <div className={`${value == 0 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] rounded-t-lg rounded-b-none group-hover:bg-lawngreen-100 w-full h-full`} />
+          <div className={`${value == 0 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] rounded-t-lg rounded-b-none group-hover:bg-lawngreen-200 w-full h-full`} />
           <img
             className="absolute top-[14px] left-[13px] w-[23px] h-[23px] object-cover z-[1]"
             alt=""
@@ -27,7 +27,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </div>
         <div onClick={() => handleClick(1)}
         className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
-          <div className={`${value == 1 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
+          <div className={`${value == 1 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-200 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -37,7 +37,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </div>
         <div onClick={() => handleClick(2)} 
         className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
-          <div className={`${value == 2 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
+          <div className={`${value == 2 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-200 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -47,7 +47,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </div>
         <div onClick={() => handleClick(3)}
         className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
-          <div className={`${value == 3 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] bg-gray-300 w-full h-full group-hover:bg-lawngreen-100 transition `} />
+          <div className={`${value == 3 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] bg-gray-300 w-full h-full group-hover:bg-lawngreen-200 transition `} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -57,7 +57,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </div>
         <div onClick={() => handleClick(4)}
         className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
-          <div className={`${value == 4 ? `bg-lawngreen-100` : `bg-gray-300`}  absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition `} />
+          <div className={`${value == 4 ? `bg-lawngreen-100` : `bg-gray-300`}  absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-200 transition `} />
           <img
             className="absolute top-[12px] left-[12px] w-[25px] h-[25px] object-cover z-[1]"
             loading="eager"
@@ -67,7 +67,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </div>
         <div onClick={() => handleClick(5)}
         className="cursor-pointer self-stretch h-[50px] relative bg-gray-300 group">
-          <div className={`${value == 5 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
+          <div className={`${value == 5 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-200 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -77,7 +77,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </div>
         <button onClick={() => handleClick(6)}
         className="cursor-pointer [border:none] p-0 bg-gray-300 self-stretch h-[50px] relative group">
-          <div className={`${value == 6 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-100 transition`} />
+          <div className={`${value == 6 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] w-full h-full group-hover:bg-lawngreen-200 transition`} />
           <img
             className="absolute top-[15px] left-[15px] w-5 h-5 object-cover z-[1]"
             loading="eager"
@@ -87,7 +87,7 @@ const PropertySidebar = ({OnChangeStep , value}:PropertySidebarProps) => {
         </button>
         <div onClick={() => handleClick(7)}
         className="cursor-pointer self-stretch h-[50px] relative rounded-t-none rounded-b-lg bg-gray-300 group ">
-          <div className={`${value == 7 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] rounded-t-none rounded-b-lg w-full h-full group-hover:bg-lawngreen-100 transition`} />
+          <div className={`${value == 7 ? `bg-lawngreen-100` : `bg-gray-300`} absolute top-[0px] left-[0px] rounded-t-none rounded-b-lg w-full h-full group-hover:bg-lawngreen-200 transition`} />
           <img
             className="absolute top-[16px] left-[16px] w-[18px] h-[18px] object-cover z-[1]"
             loading="eager"

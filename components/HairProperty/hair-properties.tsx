@@ -1,15 +1,15 @@
-import type { NextPage } from "next";
+
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import RectangleContainer from "../RectangleContainer";
+import { RectangleContainerDynamic } from "../RectangleContainer";
 import ColorsTable from "../ColorsTable";
 import PropertyContainer1 from "../PropertyContainer";
 
 function HairProperties() {
   return (
-    <div className="transition">
+    <div className="pt-[20px]">
     <PropertyContainer1 >
-      <RectangleContainer />
+      <RectangleContainerDynamic />
       <VolumeContainer>
         <SelectingVolume title="Hair contrast" />
         <SelectingVolume title="Hair Reflection" />
