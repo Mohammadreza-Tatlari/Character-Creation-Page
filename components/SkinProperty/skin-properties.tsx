@@ -1,5 +1,5 @@
 
-import { RectangleContainerDynamic } from "../RectangleContainer";
+import RectangleContainerDynamic from "../RectangleContainer";
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
 import { SkinColorTable } from "../ColorsTable";

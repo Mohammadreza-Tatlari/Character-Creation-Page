@@ -9,7 +9,7 @@ export default function PropertyContainer1({
   children,
 }: PropertyContainerProp) {
   return (
-    <div className="flex flex-col items-start justify-start gap-4 py-0 px-0 overflow-hidden w-440 h-796 text-left text-mini text-white font-gilroy-bold">
+    <div className="flex flex-col items-start justify-start gap-4 py-0 px-0 text-left text-mini text-white font-gilroy-bold">
       {children}
     </div>
   );

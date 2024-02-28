@@ -1,7 +1,6 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import ColorsTable from "../ColorsTable";
 import  { PropertyContainer2 } from "../PropertyContainer";
 import { SkinColorTable } from "../ColorsTable";
 

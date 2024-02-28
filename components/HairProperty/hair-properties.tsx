@@ -1,7 +1,7 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import { RectangleContainerDynamic } from "../RectangleContainer";
+import RectangleContainerDynamic from "../RectangleContainer";
 import ColorsTable from "../ColorsTable";
 import PropertyContainer1 from "../PropertyContainer";
 
