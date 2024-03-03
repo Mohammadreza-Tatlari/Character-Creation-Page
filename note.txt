@@ -1,0 +1,9 @@
+the ColorTableDynamic is added fixed!
+SkinTable Dynamic fixed!
+lisptick Dynamic  fixed!
+The Rectangle Table  fixed!
+property sidebar fixed!
+
+Avatar Image and background should be removed ○
+the page becomes full when it is in Fullscreen View F11 ○
+fonts fixed!
