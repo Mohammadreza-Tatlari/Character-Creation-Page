@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import PageTitle from "../components/page-title";
 import UserTitle from "../components/user-title";
 import AvatarProperty from "../components/avatar-property";
@@ -25,58 +25,86 @@ enum PropertyComponents {
   Nose = 7,
 }
 
-
 const MainPage = () => {
+  const [step, setStep] = useState<PropertyComponents>(0);
 
-const [step , setStep] = useState<PropertyComponents>(0);
-
-  function changeStep(value:number) {
-    setStep(value)
+  function changeStep(value: number) {
+    setStep(value);
   }
 
   return (
-    <div className="w-full  min-h-screen relative bg-gray-500 overflow-hidden flex flex-row items-start justify-start pt-[34px] pb-0 pr-11 pl-[43px] box-border gap-[0px_188px] tracking-[normal] mq850:gap-[0px_188px] mq1225:gap-[0px_188px] mq1225:pl-[21px] mq1225:pr-[22px] mq1225:box-border mq1525:flex-wrap">
-      <SlopedBars />
-      <div className="w-[579px] flex flex-col items-start justify-start gap-[41px_0px] min-w-[579px] max-w-full mq850:gap-[41px_0px] mq850:min-w-full mq1525:flex-1">
-        <PageTitle />
-        <div className="m-0 self-stretch flex flex-row items-start justify-between gap-[20px] max-w-full mq850:flex-wrap">
-          <div className="w-[50px] flex flex-col items-start justify-start pt-[91px] px-0 pb-0 box-border mq850:pt-[59px] mq850:box-border">
-            <PropertySidebar OnChangeStep={changeStep} value={step}/>
-          </div>
-          {step == 0 && (
-            <SkinProperty />
-          )}
-          {step == 1 && (
-            <HairProperties />
-          )}
-          {step == 2 && (
-            <BeardProperties />
-          )}
-          {step == 3 && (
-            <EyesProperties />
-          )}
-          {step == 4 && (
-            <EyebrowProperties />
-          )}
-          {step == 5 && (
-            <EarProperties />
-          )}
-          {step == 6 && (
-            <LipsProperties />
-          )}
-          {step == 7 && (
-           <NoseProperties />
-            
-          )}
+    // <div
+    //   className="w-full  min-h-screen relative bg-gray-500 overflow-hidden flex flex-row items-start
+    //  justify-start pt-[34px] pb-0 pr-11 pl-[43px] box-border gap-[0px_188px] tracking-[normal]
+    //   mq850:gap-[0px_188px] mq1225:gap-[0px_188px] mq1225:pl-[21px] mq1225:pr-[22px] mq1225:box-border mq1525:flex-wrap"
+    // >
+    <div className="max-w-screen h-screen mx-auto min-h-screen relative bg-gray-500 pt-5 pr-11 pl-[43px] box-border">
+      <div className="flex justify-between w-full">
+        <div className="pl-1">
+          <SlopedBars />
+          <PageTitle />
         </div>
+        <UserTitle />
       </div>
-      <div className="flex-1 flex flex-col items-start justify-start pt-[5px] px-0 pb-0 box-border min-w-[693px] max-w-full mq850:min-w-full">
-        <div className="self-stretch flex flex-col items-end justify-start gap-[63px_0px] max-w-full mq850:gap-[63px_0px] mq1225:gap-[63px_0px]">
-          <UserTitle />
-          <AvatarProperty />
+      <div className="mt-11 flex flex-row justify-start space-x-80">
+        <div className="m-0 self-stretch flex flex-row items-start justify-start gap-[20px] max-w-full mq850:flex-wrap">
+          <div className="w-[50px] flex flex-col items-start justify-start pt-[91px] px-0 pb-0 box-border mq850:pt-[59px] mq850:box-border">
+            <PropertySidebar OnChangeStep={changeStep} value={step} />
+          </div>
+          {step == 0 && <SkinProperty />}
+          {step == 1 && <HairProperties />}
+          {step == 2 && <BeardProperties />}
+          {step == 3 && <EyesProperties />}
+          {step == 4 && <EyebrowProperties />}
+          {step == 5 && <EarProperties />}
+          {step == 6 && <LipsProperties />}
+          {step == 7 && <NoseProperties />}
         </div>
+        <AvatarProperty />
       </div>
     </div>
+    // <div className="w-full  min-h-screen relative bg-gray-500 overflow-hidden flex flex-row items-start justify-start pt-[34px] pb-0 pr-11 pl-[43px] box-border gap-[0px_188px] tracking-[normal] mq850:gap-[0px_188px] mq1225:gap-[0px_188px] mq1225:pl-[21px] mq1225:pr-[22px] mq1225:box-border mq1525:flex-wrap">
+    //   <SlopedBars />
+    //   <div className="w-[579px] flex flex-col items-start justify-start gap-[41px_0px] min-w-[579px] max-w-full mq850:gap-[41px_0px] mq850:min-w-full mq1525:flex-1">
+    //     <PageTitle />
+    //     <div className="m-0 self-stretch flex flex-row items-start justify-start gap-[20px] max-w-full mq850:flex-wrap">
+    //       <div className="w-[50px] flex flex-col items-start justify-start pt-[91px] px-0 pb-0 box-border mq850:pt-[59px] mq850:box-border">
+    //         <PropertySidebar OnChangeStep={changeStep} value={step}/>
+    //       </div>
+    //       {step == 0 && (
+    //         <SkinProperty />
+    //       )}
+    //       {step == 1 && (
+    //         <HairProperties />
+    //       )}
+    //       {step == 2 && (
+    //         <BeardProperties />
+    //       )}
+    //       {step == 3 && (
+    //         <EyesProperties />
+    //       )}
+    //       {step == 4 && (
+    //         <EyebrowProperties />
+    //       )}
+    //       {step == 5 && (
+    //         <EarProperties />
+    //       )}
+    //       {step == 6 && (
+    //         <LipsProperties />
+    //       )}
+    //       {step == 7 && (
+    //        <NoseProperties />
+
+    //       )}
+    //     </div>
+    //   </div>
+    //   <div className="flex-1 flex flex-col items-start justify-start pt-[5px] px-0 pb-0 box-border min-w-[693px] max-w-full mq850:min-w-full">
+    //     <div className="self-stretch flex flex-col items-end justify-start gap-[63px_0px] max-w-full mq850:gap-[63px_0px] mq1225:gap-[63px_0px]">
+    //       <UserTitle />
+    //       <AvatarProperty />
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 

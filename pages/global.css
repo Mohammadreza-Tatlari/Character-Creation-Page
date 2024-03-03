@@ -35,5 +35,5 @@ body {
   display: grid;
   justify-content: start;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
 }

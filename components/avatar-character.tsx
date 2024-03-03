@@ -2,16 +2,16 @@ import type { NextPage } from "next";
 
 const AvatarCharacter: NextPage = () => {
   return (
-    <div className="h-[923px] w-[923px] relative max-w-full text-left text-mini text-white font-gilroy-bold">
-      <div className="absolute top-[257px] left-[257px] rounded-[50%] bg-lawngreen-100 [filter:blur(500px)] w-[409px] h-[409px] hidden" />
+    <div className="h-[460px] w-[460px] flex justify-center items-center relative max-w-full text-left text-mini text-white font-gilroy-bold">
+      <div className="rounded-[50%] bg-lawngreen-100 [filter:blur(500px)] w-[409px] h-[409px] hidden" /> {/*absolute top-[257px] left-[257px]  */}
       <img
-        className="absolute top-[0px] left-[0px] w-full h-full object-cover z-[1] "
+        className="absolute top-[0px] left-[0px] w-full h-full object-cover z-[1] hidden"
         alt=""
         src="/dgjfhms5603f3846da0490e9fac757c3e1e90cd-1-3@2x.png"
       />
       <div className="flex justify-center items-center">
         <div className="flex flex-row space-x-10 absolute bottom-0">
-          <div className=" min-w-24 flex flex-row justify-between items-center rounded-8xs bg-gray-400 z-[2] space-x-3 px-6 py-3">
+          <div className=" min-w-24 flex flex-row justify-between items-center rounded-8xs bg-gray-400 z-[2] space-x-3 px-3 py-1">
             <div className="text-mini tracking-[0.05em] leading-[140%] uppercase font-gilroy-bold text-white text-left z-[1]">
               forward
             </div>
@@ -21,7 +21,7 @@ const AvatarCharacter: NextPage = () => {
               src="/vector-a.svg"
             />
           </div>
-          <div className="min-w-20 flex flex-row justify-between items-center rounded-8xs bg-gray-400 z-[2] w-full h-full px-6 py-3">
+          <div className="min-w-20 flex flex-row justify-between items-center rounded-8xs bg-gray-400 z-[2] w-full h-full px-3 py-1">
             <div className=" tracking-[0.05em] leading-[140%] uppercase w-3 h-5 z-[1]">
               A
             </div>
@@ -35,7 +35,7 @@ const AvatarCharacter: NextPage = () => {
               D
             </div>
           </div>
-          <div className="min-w-28  flex flex-row justify-between items-center bg-gray-400 rounded-8xs z-[2]  px-6 py-3">
+          <div className="min-w-28  flex flex-row justify-between items-center bg-gray-400 rounded-8xs z-[2]  px-3 py-1">
             <div className="text-mini tracking-[0.05em] leading-[140%] uppercase font-gilroy-bold text-white h-5 z-[1]">
               forward
             </div>

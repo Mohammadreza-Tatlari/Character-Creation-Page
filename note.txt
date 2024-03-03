@@ -1,9 +1,9 @@
-the ColorTableDynamic is added fixed!
-SkinTable Dynamic fixed!
-lisptick Dynamic  fixed!
-The Rectangle Table  fixed!
-property sidebar fixed!
+rescaling Sidebar Propert to -50% fixed
+rescaling Volumes -20 more FIXED
+rescaling the property RectangleBar -20 more FIXED
+Rescale Title  -20 more FIXED
+Rescale the Character bar  -20 more  FIXED
+rescaling the color tables  -20 more FIXED
 
-Avatar Image and background should be removed ○
-the page becomes full when it is in Fullscreen View F11 ○
-fonts fixed!
+
+More Rescaling is Needed Around 30% more  -20 more

@@ -3,12 +3,11 @@ import type { NextPage } from "next";
 const UserTitle: NextPage = () => {
   return (
     <div className="w-[193px] flex flex-col items-end justify-start relative gap-[6px_0px] text-left text-6xl text-white font-gilroy-bold">
-      <h2 className="m-0 h-[25px] relative text-inherit tracking-[0.04em] leading-[140%] font-normal font-inherit inline-block shrink-0 mq450:text-xl mq450:leading-[28px]">
-        <span className="uppercase">K</span>
-        <span className="capitalize">eivan James</span>
+      <h2 className="m-0 h-[16px] relative text-inherit tracking-[0.04em] leading-[100%] font-normal font-inherit inline-block shrink-0 mq450:text-xl mq450:leading-[28px]">
+        <span className="capitalize">Keivan James</span>
       </h2>
-      <div className="self-stretch flex flex-row items-start justify-start py-0 px-[21px] text-mid text-lawngreen-100">
-        <div className="h-6 w-[45px] relative">
+      <div className="self-stretch flex flex-row items-start justify-start py-0 px-[12px] text-mid text-lawngreen-100">
+        <div className="ml-2 mt-1 h-6 w-[25px] relative">
           <div className="absolute top-[0px] left-[0px] tracking-[0.04em] leading-[140%] uppercase">
             Male
           </div>
