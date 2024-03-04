@@ -13,7 +13,7 @@ export const RectangleContainerDynamic = () => {
     <div className="w-[245px] h-[245px] ml-3 shrink-0 flex flex-row items-center justify-end gap-[0px_6px]">
         {/* overflow-x-hidden overflow-y-auto overflow-grow are added till now*/}
       <div className="pr-0 grid grid-cols-6 items-center h-full justify-start gap-[1px_1px] overflow-y-auto overflow-x-hidden flex-grow shrink-0
-       scrollbar scrollbar-thumb-lawngreen-100 -scroll-mr-2 scrollbar-thumb-rounded-full">
+       "> {/*scrollbar scrollbar-thumb-lawngreen-100 -scroll-mr-2 scrollbar-thumb-rounded-full */}
         {ArrayOfContent.map((items, index) => (
           <div
             className={`${
