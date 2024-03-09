@@ -1,9 +1,5 @@
-rescaling Sidebar Propert to -50% fixed
-rescaling Volumes -20 more FIXED
-rescaling the property RectangleBar -20 more FIXED
-Rescale Title  -20 more FIXED
-Rescale the Character bar  -20 more  FIXED
-rescaling the color tables  -20 more FIXED
+hieght of Property container should be increased and 
+size of propert  sidebar
 
-
-More Rescaling is Needed Around 30% more  -20 more
+fix fullscreen property to be sent down when it is changed
+use a global state for it 

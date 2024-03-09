@@ -128,15 +128,15 @@ const slicedhex = HexCodes.map((color) => color.slice(0, length - 1) )
 console.log(colorsWithoutQuotes);
 
   return (
-    <div className="w-[100px] h-[105px] shrink-0 flex flex-col items-start justify-start gap-[1px_0px] text-left text-mini text-white font-gilroy-bold">
+    <div className="ml-1 w-[110px] h-[110.5px] shrink-0 flex flex-col items-start justify-start gap-[1px_0px] text-left text-mini text-white font-gilroy-bold">
       <div className="relative tracking-[0.05em] leading-[140%] uppercase mb-2">
         {title}
       </div>
-      <div className="w-[345px] h-[90px] flex flex-col items-start justify-start gap-[4px_0px]">
+      <div className="w-[345px] h-[99px] flex flex-col items-start justify-start gap-[4px_0px]">
         <div className="HairColorTable">
           {ArrayOfColors.map((color) => (
             <div
-              className={`bg-${color} w-[19px] relative rounded-sm h-[19px]`}
+              className={`bg-${color} w-[21px] relative rounded-sm h-[21px]`}
             />
           ))}
         </div>
@@ -159,13 +159,13 @@ export function SkinColorTableDynamic({ title }: SkinColorTableProps) {
     "bg-saddlebrown-100",
   ];
   return (
-    <div className="w-auto h-[65px] flex flex-col items-start justify-start gap-[2px_0px]">
+    <div className="ml-1 w-auto h-[65px] flex flex-col items-start justify-start gap-[2px_0px]">
       <div className="relative tracking-[0.05em] leading-[100%] uppercase">
         {title}
       </div>
       <div className="mt-1 grid grid-cols-5 grid-rows-2 items-start justify-start gap-0.5">
         {ArraySkinColor.map((color) => (
-          <div className={`${color} h-[18px] w-[18px] relative rounded-sm `} />
+          <div className={`${color} h-[20px] w-[20px] relative rounded-sm `} />
         ))}
       </div>
     </div>
@@ -195,14 +195,14 @@ export function LipstickColorTableDynamic() {
   ];
 
   return (
-    <div className="w-[129px] h-[84px] flex flex-col items-start justify-start mt-2 gap-[1px_0px]">
+    <div className="ml-1 w-[129px] h-[84px] flex flex-col items-start justify-start mt-2 gap-[1px_0px]">
       <div className="relative tracking-[0.05em] leading-[100%] uppercase">
         LIPSTICK COLOR
       </div>
       <div className="mt-1 self-stretch grid grid-cols-6 grid-rows-3 items-start justify-start gap-0.5">
         {ArrayOfLipstick.map((color) => (
           <div
-            className={`h-[18px] w-[18px] relative rounded-sm bg-${color}`}
+            className={`h-[20px] w-[20px] relative rounded-sm bg-${color}`}
           />
         ))}
       </div>

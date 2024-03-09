@@ -130,12 +130,13 @@ module.exports = {
     },
     fontSize: {
       mini: "12px",
-      mid: "17px",
-      "6xl": "25px",
+      mid: "12px",
+      "6xl": "20px",
       xl: "20px",
       base: "16px",
-      "11xl": "15px",
-      "5xl": "24px",
+      "11xl": "21px",
+      "12xl" : "25px",
+      "5xl": "24px", //redundent but will be fixed
       lg: "18px",
       inherit: "inherit",
     },

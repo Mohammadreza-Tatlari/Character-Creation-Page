@@ -13,11 +13,11 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
   }
   return (
     <div className="self-stretch flex flex-col items-start justify-start gap-[40px_0px] text-left text-mini text-white font-gilroy-bold">
-      <div className="w-[28px] h-[28px] ">
+      <div className="w-[31px] h-[35px] ">
         <div className="self-stretch flex flex-col items-start justify-start">
           <div
             onClick={() => handleClick(0)}
-            className="cursor-pointer [border:none] p-0 self-stretch h-[28px] relative rounded-t-lg rounded-b-none group"
+            className="cursor-pointer [border:none] p-0 self-stretch h-[35px] relative rounded-t-lg rounded-b-none group"
           >
             <div
               className={`${
@@ -33,7 +33,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </div>
           <div
             onClick={() => handleClick(1)}
-            className="cursor-pointer self-stretch h-[28px] relative bg-gray-300 group"
+            className="cursor-pointer self-stretch h-[35px] relative bg-gray-300 group"
           >
             <div
               className={`${
@@ -50,7 +50,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </div>
           <div
             onClick={() => handleClick(2)}
-            className="cursor-pointer self-stretch h-[28px] relative bg-gray-300 group"
+            className="cursor-pointer self-stretch h-[35px] relative bg-gray-300 group"
           >
             <div
               className={`${
@@ -67,7 +67,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </div>
           <div
             onClick={() => handleClick(3)}
-            className="cursor-pointer self-stretch h-[28px] relative bg-gray-300 group"
+            className="cursor-pointer self-stretch h-[35px] relative bg-gray-300 group"
           >
             <div
               className={`${
@@ -84,7 +84,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </div>
           <div
             onClick={() => handleClick(4)}
-            className="cursor-pointer self-stretch h-[28px] relative bg-gray-300 group"
+            className="cursor-pointer self-stretch h-[35px] relative bg-gray-300 group"
           >
             <div
               className={`${
@@ -101,7 +101,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </div>
           <div
             onClick={() => handleClick(5)}
-            className="cursor-pointer self-stretch h-[28px] relative bg-gray-300 group"
+            className="cursor-pointer self-stretch h-[35px] relative bg-gray-300 group"
           >
             <div
               className={`${
@@ -118,7 +118,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </div>
           <button
             onClick={() => handleClick(6)}
-            className="cursor-pointer [border:none] p-0 bg-gray-300 self-stretch h-[28px] relative group"
+            className="cursor-pointer [border:none] p-0 bg-gray-300 self-stretch h-[35px] relative group"
           >
             <div
               className={`${
@@ -135,7 +135,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
           </button>
           <div
             onClick={() => handleClick(7)}
-            className="cursor-pointer self-stretch h-[28px] relative rounded-t-none rounded-b-lg bg-gray-300 group "
+            className="cursor-pointer self-stretch h-[35px] relative rounded-t-none rounded-b-lg bg-gray-300 group "
           >
             <div
               className={`${
@@ -153,7 +153,7 @@ const PropertySidebar = ({ OnChangeStep, value }: PropertySidebarProps) => {
         </div>
         <div className="flex flex-col items-center justify-start gap-[6px_0px]">
           <img
-            className="w-[60px] h-[60px] relative "
+            className="w-[65px] h-[65px] relative "
             loading="eager"
             alt=""
             src="/group-1938@2x.png"

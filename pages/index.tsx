@@ -5,7 +5,7 @@ import AvatarProperty from "../components/avatar-property";
 import SlopedBars from "../components/color-bars";
 import NoseProperties from "../components/NoseProperty/nose-properties";
 import PropertySidebar from "../components/property-sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HairProperties from "../components/HairProperty/hair-properties";
 import SkinProperty from "../components/SkinProperty/skin-properties";
 import BeardProperties from "../components/BeardPropety/beard-properties";
@@ -13,6 +13,8 @@ import EyesProperties from "../components/EyesProperty/eyes-properties";
 import EyebrowProperties from "../components/EyebrowProperty/eyebrow-properties";
 import EarProperties from "../components/EarProperty/ear-properties";
 import LipsProperties from "../components/LipsProperty/lips-properties";
+import { useEventListener } from "usehooks-ts";
+import { useOnFullscreen } from "../store/useFullscreen";
 
 enum PropertyComponents {
   Skin = 0,
@@ -27,26 +29,46 @@ enum PropertyComponents {
 
 const MainPage = () => {
   const [step, setStep] = useState<PropertyComponents>(0);
+  const { isFullscreen, onExpandFullscreen, onCollapseFullscreen } =
+    useOnFullscreen((state) => state);
+  console.log("is full", isFullscreen);
 
   function changeStep(value: number) {
     setStep(value);
   }
 
+  if (typeof window !== "undefined") {
+    window.onresize = function () {
+      var maxHeight = window.screen.height,
+        curHeight = window.innerHeight
+      if ( maxHeight == curHeight) {
+        onExpandFullscreen()
+        console.log("shout");
+
+      } else {
+        onCollapseFullscreen()
+        console.log("shout closed");
+      }
+    };
+  }
+
   return (
-    // <div
-    //   className="w-full  min-h-screen relative bg-gray-500 overflow-hidden flex flex-row items-start
-    //  justify-start pt-[34px] pb-0 pr-11 pl-[43px] box-border gap-[0px_188px] tracking-[normal]
-    //   mq850:gap-[0px_188px] mq1225:gap-[0px_188px] mq1225:pl-[21px] mq1225:pr-[22px] mq1225:box-border mq1525:flex-wrap"
-    // >
-    <div className="max-w-screen h-screen mx-auto min-h-screen relative bg-gray-500 pt-5 pr-11 pl-[43px] box-border">
-      <div className="flex justify-between w-full">
+    <div
+      id="body"
+      className="max-w-screen h-screen overflow-y-hidden mx-auto min-h-screen relative bg-gray-500 pl-[43px]"
+    >
+      <div className="flex pt-5 justify-between w-full">
         <div className="pl-1">
           <SlopedBars />
           <PageTitle />
         </div>
         <UserTitle />
       </div>
-      <div className="mt-11 flex flex-row justify-start space-x-80">
+      <div
+        className={`${
+          isFullscreen ? `mt-12` : `mt-1`
+        } flex flex-row justify-start space-x-80`}
+      >
         <div className="m-0 self-stretch flex flex-row items-start justify-start gap-[20px] max-w-full mq850:flex-wrap">
           <div className="w-[50px] flex flex-col items-start justify-start pt-[91px] px-0 pb-0 box-border mq850:pt-[59px] mq850:box-border">
             <PropertySidebar OnChangeStep={changeStep} value={step} />

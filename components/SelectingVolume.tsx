@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useOnFullscreen } from "../store/useFullscreen";
 
 interface SelectingVolumeProps {
   title: String;
@@ -9,6 +10,7 @@ export default function SelectingVolume({
   title,
 }: SelectingVolumeProps) {
   const [volumeValue, setVolumeValue] = useState(350);
+  const { isFullscreen } = useOnFullscreen((state) => state)
 
   function handleDecrease() {
     if (volumeValue > 1) {
@@ -23,7 +25,7 @@ export default function SelectingVolume({
   }
 
   return (
-    <div className="w-[250px] h-[36px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 pr-0 pl-px box-border gap-[1px_0px]">
+    <div className={`${isFullscreen ? `w-[325px] h-[39px]` : `w-[310px] h-[36px]`} overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 pr-0 pl-px box-border gap-[1px_0px]`}>
       <div className="relative tracking-[0.05em] text-mini leading-[100%] uppercase">
         {title}
       </div>
@@ -52,14 +54,6 @@ export default function SelectingVolume({
             src="/arrowright-1.svg"
           />
         </button>
-        {/* <div className="h-10 w-10 relative group">
-          <div className="cursor-pointer absolute top-[40px] left-[40px] rounded-tl-8xs rounded-tr-none rounded-br-none rounded-bl-8xs bg-gray-400 hover:bg-lawngreen-200 active:bg-lawngreen-100/70 w-full h-full [transform:_rotate(180deg)] [transform-origin:0_0] group" />
-          <img
-            className=" relative top-[10px] left-[10px] w-5 h-5 z-[1] cursor-pointer"
-            alt=""
-            src="/arrowright-1.svg"
-          />
-        </div> */}
       </div>
     </div>
   );
