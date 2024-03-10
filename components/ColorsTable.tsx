@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -10,9 +10,62 @@ interface SkinColorTableProps {
   title: string;
 }
 
-
-
 export function ColorsTableDynamic({ title }: ColorsTableProp) {
+  const HexCodes = [
+    "#1c1f21",
+    "#312e2c",
+    "#35261c",
+    "#5c3b24",
+    "#6d4c35",
+    "#6b503b",
+    "#7f684e",
+    "#9f7f59",
+    "#99815d",
+    "#d6b97b",
+    "#9f7f59",
+    "#845039",
+    "#7c140f",
+    "#a02e19",
+    "#682b1f",
+    "#b64b28",
+    "#626262",
+    "#808080",
+    "#aaa",
+    "#c5c5c5",
+    "#463955",
+    "#763c76",
+    "#5a3f6b",
+    "#ed74e3",
+    "#eb4b93",
+    "#f299bc",
+    "#04959e",
+    "#025f86",
+    "#023974",
+    "#3fa16a",
+    "#217c61",
+    "#763c76",
+    "#b6c034",
+    "#70a90b",
+    "#f28831",
+    "#e69102",
+    "#e5b103",
+    "#dcb857",
+    "#439d13",
+    "#fb8057",
+    "#d1593c",
+    "#ce3120",
+    "#ad0903",
+    "#880302",
+    "#1f1814",
+    "#37291e",
+    "#2e221b",
+    "#291f19",
+    "#e3b896",
+    "#025f86",
+    "#fff",
+    "#000",
+  ];
+
   const ArrayOfColors = [
     "gray-1500",
     "darkslategray-200",
@@ -55,7 +108,7 @@ export function ColorsTableDynamic({ title }: ColorsTableProp) {
     "chocolate",
     "coral-100",
     "coral-200",
-    "firebrick-100",
+    "firebrick-100", //
     "firebrick-200",
     "darkred",
     "gray-1700",
@@ -67,16 +120,23 @@ export function ColorsTableDynamic({ title }: ColorsTableProp) {
     "black",
     "white",
   ];
+
+  
+const colorsWithoutQuotes = HexCodes.map((color) => color.replace(/"/g, ""));
+const slicedhex = HexCodes.map((color) => color.slice(0, length - 1) )
+
+console.log(colorsWithoutQuotes);
+
   return (
-    <div className="w-[425px] h-[150px] shrink-0 flex flex-col items-start justify-start gap-[1px_0px] text-left text-mini text-white font-gilroy-bold">
+    <div className="ml-1 w-[110px] h-[110.5px] shrink-0 flex flex-col items-start justify-start gap-[1px_0px] text-left text-mini text-white font-gilroy-bold">
       <div className="relative tracking-[0.05em] leading-[140%] uppercase mb-2">
         {title}
       </div>
-      <div className="w-[425px] h-32 flex flex-col items-center justify-start gap-[4px_0px]">
+      <div className="w-[345px] h-[99px] flex flex-col items-start justify-start gap-[4px_0px]">
         <div className="HairColorTable">
           {ArrayOfColors.map((color) => (
             <div
-              className={`bg-${color} w-[29px] relative rounded-sm h-[29px]`}
+              className={`bg-${color} w-[21px] relative rounded-sm h-[21px]`}
             />
           ))}
         </div>
@@ -84,7 +144,6 @@ export function ColorsTableDynamic({ title }: ColorsTableProp) {
     </div>
   );
 }
-
 
 export function SkinColorTableDynamic({ title }: SkinColorTableProps) {
   const ArraySkinColor = [
@@ -100,13 +159,13 @@ export function SkinColorTableDynamic({ title }: SkinColorTableProps) {
     "bg-saddlebrown-100",
   ];
   return (
-    <div className="w-[161px] h-[84px] flex flex-col items-start justify-start gap-[1px_0px]">
-      <div className="relative tracking-[0.05em] leading-[140%] uppercase">
+    <div className="ml-1 w-auto h-[65px] flex flex-col items-start justify-start gap-[2px_0px]">
+      <div className="relative tracking-[0.05em] leading-[100%] uppercase">
         {title}
       </div>
-      <div className="self-stretch flex-1 flex flex-row flex-wrap items-start justify-start gap-[4px_0.5px]">
+      <div className="mt-1 grid grid-cols-5 grid-rows-2 items-start justify-start gap-0.5">
         {ArraySkinColor.map((color) => (
-          <div className={`${color} h-[29px] w-[29px] relative rounded-sm `} />
+          <div className={`${color} h-[20px] w-[20px] relative rounded-sm `} />
         ))}
       </div>
     </div>
@@ -136,22 +195,20 @@ export function LipstickColorTableDynamic() {
   ];
 
   return (
-    <div className="w-[161px] h-[84px] flex flex-col items-start justify-start gap-[1px_0px]">
-      <div className="relative tracking-[0.05em] leading-[140%] uppercase">
+    <div className="ml-1 w-[129px] h-[84px] flex flex-col items-start justify-start mt-2 gap-[1px_0px]">
+      <div className="relative tracking-[0.05em] leading-[100%] uppercase">
         LIPSTICK COLOR
       </div>
-      <div className="self-stretch grid grid-cols-6 grid-rows-3 items-start justify-start gap-[5px_30px]">
+      <div className="mt-1 self-stretch grid grid-cols-6 grid-rows-3 items-start justify-start gap-0.5">
         {ArrayOfLipstick.map((color) => (
           <div
-            className={`h-[29px] w-[29px] relative rounded-sm bg-${color}`}
+            className={`h-[20px] w-[20px] relative rounded-sm bg-${color}`}
           />
         ))}
       </div>
     </div>
   );
 }
-
-
 
 export default function ColorsTable({ title }: ColorsTableProp) {
   return (

@@ -9,7 +9,7 @@ export default function PropertyContainer1({
   children,
 }: PropertyContainerProp) {
   return (
-    <div className="flex flex-col items-start justify-start gap-4 py-0 px-0 w-440 h-796 text-left text-mini text-white font-gilroy-bold">
+    <div className="flex flex-col items-start justify-start gap-3 py-0 px-0 w-[260px] h-456 text-left text-mini text-white font-gilroy-bold">
       {children}
     </div>
   );
@@ -17,7 +17,7 @@ export default function PropertyContainer1({
 
 export function PropertyContainer2({ children }: PropertyContainerProp) {
   return (
-    <div className="w-[440px] flex flex-col items-start justify-start gap-[41px_0px] max-w-full text-left text-mini text-white font-gilroy-bold mq450:gap-[41px_0px]">
+    <div className="flex flex-col items-start justify-start gap-3 py-0 max-w-full w-[260px] h-456 text-left text-mini text-white font-gilroy-bold mq450:gap-[41px_0px]">
       {children}
     </div>
   );

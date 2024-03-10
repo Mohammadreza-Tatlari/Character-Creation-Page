@@ -1,6 +1,6 @@
 'use client';
 
-const SlopedBars = () => {
+const SlopedBarsTest = () => {
   return (
     <div className="h-[157px] w-[184.4px] absolute !m-[0] top-[-16px] left-[43px] z-[1]">
       <div className="absolute top-[0px] left-[34.87px] [background:linear-gradient(180deg,_rgba(0,_255,_25,_0.16),_rgba(28,_108,_0,_0))] w-[22px] h-[155px] [transform:_rotate(13deg)] [transform-origin:0_0]" />
@@ -11,5 +11,20 @@ const SlopedBars = () => {
     </div>
   );
 };
+
+ function SlopedBars() {
+  return(
+    <>
+    <div className="h-[107px] w-[184.4px] absolute !m-[0] top-[-16px] left-[70px] z-[1] space-x-1.5 flex flex-row">
+    <div className="[background:linear-gradient(180deg,_rgba(0,_255,_25,_0.16),_rgba(28,_108,_0,_0))] w-[22px] h-[80px] [transform:_rotate(13deg)] [transform-origin:0_0]"/>
+    <div className="[background:linear-gradient(180deg,_rgba(0,_239,_255,_0.32),_rgba(0,_239,_255,_0),_rgba(0,_239,_255,_0))] w-[18px] h-[80px] [transform:_rotate(13deg)] [transform-origin:0_0]"/>
+    <div className="[background:linear-gradient(180deg,_rgba(0,_255,_25,_0.16),_rgba(28,_108,_0,_0))] [transform-origin:0_0]  w-[18px] h-[80px] [transform:_rotate(13deg)]"/>
+    <div className="[background:linear-gradient(180deg,_rgba(0,_239,_255,_0.32),_rgba(0,_239,_255,_0))] w-[18px] h-[80px] [transform:_rotate(13deg)] [transform-origin:0_0]"/>
+    <div className="[background:linear-gradient(180deg,_rgba(0,_255,_25,_0.16),_rgba(253,_179,_255,_0),_rgba(28,_108,_0,_0))] w-[18px] h-[180px] [transform:_rotate(13deg)] [transform-origin:0_0] z-[4]"/>
+
+    </div>
+    </>
+  )
+}
 
 export default SlopedBars;
