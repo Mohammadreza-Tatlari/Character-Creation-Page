@@ -1,7 +1,7 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import ColorsTable from "../ColorsTable";
+import ColorsTable, { ColorsTableDynamic } from "../ColorsTable";
 import  { PropertyContainer2 } from "../PropertyContainer";
 
 function EyebrowProperties() {
@@ -14,7 +14,7 @@ function EyebrowProperties() {
         <SelectingVolume title="EYEBROW SHADOW" />
         <SelectingVolume title="EYEBROW LINEAR" />
       </VolumeContainer>
-      <ColorsTable title="EYES COLOR" />
+      <ColorsTableDynamic title="EYES COLOR" />
     </PropertyContainer2>
     </div>
   );

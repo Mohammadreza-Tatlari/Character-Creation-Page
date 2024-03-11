@@ -2,7 +2,7 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import ColorsTable from "../ColorsTable";
+import ColorsTable, { ColorsTableDynamic } from "../ColorsTable";
 import { PropertyContainer2 } from "../PropertyContainer";
 
 function EyesProperties() {
@@ -15,7 +15,7 @@ function EyesProperties() {
         <SelectingVolume title="EYE SHADOW" />
         <SelectingVolume title="EYE LINEAR" />
       </VolumeContainer>
-      <ColorsTable title="EYES COLOR" />
+      <ColorsTableDynamic title="EYES COLOR" />
     </PropertyContainer2>
     </div>
   );

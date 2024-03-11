@@ -3,7 +3,7 @@
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
 import { PropertyContainer2 } from "../PropertyContainer";
-import { SkinColorTable } from "../ColorsTable";
+import { SkinColorTable, SkinColorTableDynamic } from "../ColorsTable";
 
 function NoseProperties() {
   return (
@@ -13,7 +13,7 @@ function NoseProperties() {
         <SelectingVolume title="NOSE STYLE" />
         <SelectingVolume title="NOSE SIZE" />
       </VolumeContainer>
-      <SkinColorTable title="NOSE COLOR"/>
+      <SkinColorTableDynamic title="NOSE COLOR"/>
     </PropertyContainer2>
     </div>
   );

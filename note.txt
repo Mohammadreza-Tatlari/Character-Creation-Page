@@ -1,0 +1,5 @@
+hieght of Property container should be increased and 
+size of propert  sidebar
+
+fix fullscreen property to be sent down when it is changed
+use a global state for it 

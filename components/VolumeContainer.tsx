@@ -6,7 +6,7 @@ interface VolumeContainerProps{
 }
 export default function VolumeContainer({children}:VolumeContainerProps) {
   return (
-    <div className="w-[360px] overflow-x-auto flex flex-col items-start justify-start gap-[15px] max-w-full text-left text-mini text-white font-gilroy-bold">
+    <div className="w-auto ml-1 flex flex-col items-start justify-start gap-[15px] mt-3 max-w-full text-left text-mini text-white font-gilroy-bold">
         {children}
     </div>
   )

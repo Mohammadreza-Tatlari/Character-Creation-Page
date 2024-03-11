@@ -2,7 +2,7 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import ColorsTable, { LipstickColorTable } from "../ColorsTable";
+import ColorsTable, { ColorsTableDynamic, LipstickColorTable, LipstickColorTableDynamic } from "../ColorsTable";
 import { PropertyContainer2 } from "../PropertyContainer";
 
 function LipsProperties() {
@@ -15,8 +15,8 @@ function LipsProperties() {
         <SelectingVolume title="LIPSTICK" />
         <SelectingVolume title="LIPS LINEAR" />
       </VolumeContainer>
-      <ColorsTable title="LIPS COLOR" />
-      <LipstickColorTable />
+      <ColorsTableDynamic title="LIPS COLOR" />
+      <LipstickColorTableDynamic />
     </PropertyContainer2>
     </div>
   );

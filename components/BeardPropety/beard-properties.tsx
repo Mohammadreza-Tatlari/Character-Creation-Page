@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import RectangleContainerDynamic from "../RectangleContainer";
-import ColorsTable from "../ColorsTable";
+import {RectangleContainerDynamic} from "../RectangleContainer";
+import ColorsTable, { ColorsTableDynamic } from "../ColorsTable";
 import PropertyContainer1 from "../PropertyContainer";
 
 function BeardProperties() {
@@ -14,7 +14,7 @@ function BeardProperties() {
           <SelectingVolume title="Beard contrast" />
           <SelectingVolume title="Beard Reflection" />
         </VolumeContainer>
-        <ColorsTable title="Beard COLOR" />
+        <ColorsTableDynamic title="Beard COLOR" />
       </PropertyContainer1>
     </div>
   );

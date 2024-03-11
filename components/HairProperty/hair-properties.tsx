@@ -1,8 +1,8 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
-import RectangleContainerDynamic from "../RectangleContainer";
-import ColorsTable from "../ColorsTable";
+import { RectangleContainerDynamic } from "../RectangleContainer";
+import ColorsTable, { ColorsTableDynamic } from "../ColorsTable";
 import PropertyContainer1 from "../PropertyContainer";
 
 function HairProperties() {
@@ -14,7 +14,8 @@ function HairProperties() {
         <SelectingVolume title="Hair contrast" />
         <SelectingVolume title="Hair Reflection" />
       </VolumeContainer>
-      <ColorsTable title="HAIR COLOR" />
+      {/* <ColorsTable title="HAIR COLOR" /> */}
+      <ColorsTableDynamic title="HAIR COLOR" />
     </PropertyContainer1>
     </div>
   );

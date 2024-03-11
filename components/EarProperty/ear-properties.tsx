@@ -1,6 +1,7 @@
 
 import VolumeContainer from "../VolumeContainer";
 import SelectingVolume from "../SelectingVolume";
+import ColorsTable, { SkinColorTableDynamic } from "../ColorsTable";
 import  { PropertyContainer2 } from "../PropertyContainer";
 import { SkinColorTable } from "../ColorsTable";
 
@@ -13,7 +14,7 @@ function EarProperties() {
         <SelectingVolume title="EAR SIZE" />
         <SelectingVolume title="EARRINGS" />
       </VolumeContainer>
-      <SkinColorTable title="EAR COLOR" />
+      <SkinColorTableDynamic title="EAR COLOR" />
     </PropertyContainer2>
     </div>
   );
